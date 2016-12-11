@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- 项目信息 -->
+	<artifactId>ocbbs-web-classic</artifactId>
+	<version>${ocbbs-web-classic.version}</version>
+	<packaging>war</packaging>
+	
+	<!-- 父级模块 -->
+	<parent>
+		<groupId>org.oc.ocbbs</groupId>
+		<artifactId>ocbbs-web</artifactId>
+		<version>${ocbbs-web.version}</version>
+	</parent>
+	
+	<!-- 引用资源 -->
+	<dependencies>
+		
+		<dependency>
+		    <groupId>org.oc.ocbbs</groupId>
+		    <artifactId>ocbbs-common</artifactId>
+		    <version>${ocbbs-common.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.oc.ocbbs</groupId>
+		    <artifactId>ocbbs-api</artifactId>
+		    <version>${ocbbs-api.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.oc.ocbbs</groupId>
+		    <artifactId>ocbbs-web-common</artifactId>
+		    <version>${ocbbs-web-common.version}</version>
+		    <type>war</type>
+		</dependency>
+		<dependency>
+		    <groupId>org.oc.ocbbs</groupId>
+		    <artifactId>ocbbs-web-console</artifactId>
+		    <version>${ocbbs-web-console.version}</version>
+		    <type>war</type>
+		</dependency>
+	</dependencies>
+</project>
